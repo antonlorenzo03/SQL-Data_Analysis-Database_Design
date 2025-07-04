@@ -14,8 +14,7 @@ _Note: this project is still in progress_
 ## Dataset Description
 This dataset from Kaggle contains hotel bookings across two hotels from 2015 to 2017. It contains over 100,000 rows of data and includes relevant booking information (room assignment, meal, number of guests, distribution channel, etc.) and anonymized customer data (name, country of origin, email, etc.) Note that all sensitive information has been replaced with artificial data by the uploader on Kaggle.
 
-  ### *Kaggle Dataset Reference*
-  [View Sample Sales Data](https://www.kaggle.com/datasets/mojtaba142/hotel-booking)
+*Source: * [Kaggle - Hotel Booking Dataset](https://www.kaggle.com/datasets/mojtaba142/hotel-booking)
 
 ## Tools Used
 - Python (Pandas) - _introducing "messiness"_
