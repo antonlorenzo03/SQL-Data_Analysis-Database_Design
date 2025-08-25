@@ -20,7 +20,7 @@ CREATE TABLE reservation(
 	booking_changes INT DEFAULT 0,
 	req_car_parking INT DEFAULT 0,
 	special_req INT DEFAULT 0,
-	adr DECIMAL(10,2) DEFAULT 0,
+	adr DECIMAL(10,2) DEFAULT NULL,
 	company_id INT,
 	meal_id INT,
 	ct_id INT,
