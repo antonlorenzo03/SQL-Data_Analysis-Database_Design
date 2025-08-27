@@ -177,17 +177,16 @@ CREATE TABLE room_type(
 INSERT INTO room_type(room_code, hotel_id)
 SELECT DISTINCT
 	room_type,
-	CASE hotel
-		WHEN 'Resort Hotel' THEN 1
-		WHEN 'City Hotel' THEN 2
-	END AS hotel_id
+	h.hotel_id
 FROM (
 	SELECT reserved_room_type  AS room_type, hotel
 	FROM staging_reservations
 	UNION
 	SELECT assigned_room_type AS room_type, hotel
 	FROM staging_reservations
-) AS combined_room_type;
+) AS combined_room_type
+JOIN hotel h 
+ON combined_room_type.hotel = h.hotel_name;
 
 
 SELECT * FROM room_type;
@@ -305,7 +304,6 @@ WHERE sr.rn = 1;
 
 
 SELECT * FROM customer;
-
 
 
 
