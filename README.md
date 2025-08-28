@@ -5,3 +5,6 @@ Finally, I wrote SQL queries to calculate business-relevant metrics, demonstrati
 
 Detailed documentation on my database design decisions and transformation rules can be viewed in my portfolio website [(SQL Database Design and ETL
 Pipeline)](https://lac-b26.my.canva.site/anton-lorenzo-portfolio/#sql-etl-project)
+
+## Tools
+- MySQL
